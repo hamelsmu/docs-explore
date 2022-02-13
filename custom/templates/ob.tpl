@@ -6,7 +6,7 @@
     {{ cell.metadata.magics_language}}
 {%- elif 'name' in nb.metadata.get('language_info', {}) -%}
     {{ nb.metadata.language_info.name }}
-{%- endif %}{{ ' '.join(cell.metadata.tags) }}
+{%- endif %}
 {{ cell.source}}
 ```
 {% endblock input %}
